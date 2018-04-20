@@ -160,11 +160,7 @@ return (
               <Layout>
               <Markdown>
                 {`
-<<<<<<< HEAD
-* Teams involved
-=======
 * Teams involved                  
->>>>>>> bb96318a669688b65f6c5b1ef63923674ff59941
   * Analytics
   * R&amp;D
   * Marketing
@@ -174,11 +170,7 @@ return (
                 `}
               </Markdown>             
                 <Fill>
-<<<<<<< HEAD
                   <Image src={"https://raw.githubusercontent.com/ginnyqg/spectacle-presentation/master/my-presentation/images/brain.png"} height="300px" margin="50px auto auto 350px"/>
-=======
-                  <Image src={"https://raw.githubusercontent.com/ginnyqg/spectacle-presentation/master/my-presentation/images/brain.png"} height="300px" margin="50px 320px"/>
->>>>>>> bb96318a669688b65f6c5b1ef63923674ff59941
                 </Fill>
               </Layout>
             </Slide>
@@ -193,16 +185,27 @@ return (
             </Slide>
             <SlideSet>
               <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+                <Heading size={4} textColor="white">Process</Heading>
+                <Layout>
                 <List>
                   <Appear>
                     <ListItem>Length of initiative: 9 - 12 months</ListItem>
                   </Appear>
-                </List>
-                <List>
+                  <Appear>
+                    <ListItem>5 dosage, 3 purity, 6 demographic levels</ListItem>
+                  </Appear>
+                  <Appear>
+                    <ListItem>1 control group for comparison</ListItem>
+                  </Appear>
                   <Appear>
                     <ListItem>Memory diagnosis</ListItem>
                   </Appear>
+                  <Appear>
+                    <ListItem>Before, every quarter, after</ListItem>
+                  </Appear>
                 </List>
+                  <Image src={"https://raw.githubusercontent.com/ginnyqg/spectacle-presentation/master/my-presentation/images/test_group.png"} height="300px"/>
+                </Layout>
               </Slide>
               <Slide transition={["slide"]} bgColor="primary">
                 <Heading size={1} caps fit textColor="tertiary">

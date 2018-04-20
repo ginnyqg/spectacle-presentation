@@ -154,10 +154,12 @@ return (
               <Heading caps fit size={1} textColor="primary">
                 AP’s X55 Initiative
               </Heading>
+              <Heading size={6} textColor="secondary">
+                X55 is believed can enhance patients' memory by 20% by the end of 6 consecutive months’ usage (R&amp;D)
+              </Heading>
+              <Layout>
               <Markdown>
                 {`
-X55 is believed can enhance patients' memory by **20%** by the end of **6** consecutive months’ usage (R&amp;D)
-
 * Teams involved
   * Analytics
   * R&amp;D
@@ -166,34 +168,32 @@ X55 is believed can enhance patients' memory by **20%** by the end of **6** cons
   * Product
   * Patient Care
                 `}
-              </Markdown>
+              </Markdown>             
+                <Fill>
+                  <Image src={"https://raw.githubusercontent.com/ginnyqg/spectacle-presentation/master/my-presentation/images/brain.png"} height="300px" margin="50px auto auto 350px"/>
+                </Fill>
+              </Layout>
             </Slide>
-            {
-              MarkdownSlides`
-#### Create Multiple Slides in Markdown
-All the same tags and elements supported in <Markdown /> are supported in MarkdownSlides.
----
-Slides are separated with **three dashes** and can be used _anywhere_ in the deck. The markdown can either be:
-* A Tagged Template Literal
-* Imported Markdown from another file
-              `
-            }
-            <Slide transition={["slide", "spin"]} bgColor="primary">
-              <Heading caps fit size={1} textColor="tertiary">
-                Smooth
+            <Slide transition={["zoom", "fade"]} bgColor="primary">
+              <Heading caps size={3}>AP Analytics</Heading>
+              <Heading size={6}>
+                Creates a modern and accessible memory recovery experience with
               </Heading>
-              <Heading caps fit size={1} textColor="secondary">
-                Combinable Transitions
+              <Heading size={6} textColor="white">
+                AI and technology
               </Heading>
             </Slide>
             <SlideSet>
               <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
                 <List>
-                  <Appear><ListItem>Inline style based theme system</ListItem></Appear>
-                  <Appear><ListItem>Autofit text</ListItem></Appear>
-                  <Appear><ListItem>Flexbox layout system</ListItem></Appear>
-                  <Appear><ListItem>PDF export</ListItem></Appear>
-                  <Appear><ListItem>And...</ListItem></Appear>
+                  <Appear>
+                    <ListItem>Length of initiative: 9 - 12 months</ListItem>
+                  </Appear>
+                </List>
+                <List>
+                  <Appear>
+                    <ListItem>Memory diagnosis</ListItem>
+                  </Appear>
                 </List>
               </Slide>
               <Slide transition={["slide"]} bgColor="primary">

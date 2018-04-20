@@ -154,11 +154,13 @@ return (
               <Heading caps fit size={1} textColor="primary">
                 AP’s X55 Initiative
               </Heading>
+              <Heading size={6} textColor="secondary">
+                X55 is believed can enhance patients' memory by 20% by the end of 6 consecutive months’ usage (R&amp;D)
+              </Heading>
+              <Layout>
               <Markdown>
                 {`
-X55 is believed can enhance patients' memory by **20%** by the end of **6** consecutive months’ usage (R&amp;D)
-
-* Teams involved
+* Teams involved                  
   * Analytics
   * R&amp;D
   * Marketing
@@ -166,7 +168,11 @@ X55 is believed can enhance patients' memory by **20%** by the end of **6** cons
   * Product
   * Patient Care
                 `}
-              </Markdown>
+              </Markdown>             
+                <Fill>
+                  <Image src={"https://raw.githubusercontent.com/ginnyqg/spectacle-presentation/master/my-presentation/images/brain.png"} height="300px" margin="50px 320px"/>
+                </Fill>
+              </Layout>
             </Slide>
             {
               MarkdownSlides`

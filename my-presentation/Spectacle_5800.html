@@ -107,41 +107,45 @@ return (
         return (
           <Deck transition={["zoom", "slide"]} theme={theme}>
             <Slide transition={["zoom"]} bgColor="primary">
-              <Heading size={1} fit caps lineHeight={1} textColor="black">
+              <Heading size={1} fit caps bold lineHeight={1} textColor="black">
                 Axon Pharma X55 Initiative
               </Heading>
               <Heading size={5} textColor="white">
                 - a new way to test drug
               </Heading>
-              <Text>
+              <Text textSize="1em">
                 Chief Analytics Office: Ginny Gao
               </Text>
             </Slide>
-            <Slide id="stats" transition={["slide"]} bgImage={"https://raw.githubusercontent.com/ginnyqg/spectacle-presentation/master/my-presentation/images/mem_loss_stats.png"}>
+            <Slide id="stats" transition={["slide"]} bgImage={"https://raw.githubusercontent.com/ginnyqg/spectacle-presentation/master/my-presentation/images/mem_loss_stats.png"} bgDarken={0.25}>
             </Slide>
             <Slide id="cartoon" transition={["zoom", "fade"]} bgImage={"https://raw.githubusercontent.com/ginnyqg/spectacle-presentation/master/my-presentation/images/joe_jenna.png"}>
             </Slide>
             <Slide transition={["slide"]}>
+              <Text textSize="2em" textColor="white" bold textAlign="left">
+                Red &amp; Kitty
+              </Text>
               <Appear fid="1">
-                <Text textSize="1.5em" bold textColor="secondary">
-                  Married for 30 years, Joe had never forgotten a single important day with his wife Jenna
+                <Text textSize="1.2em" bold textColor="secondary" textAlign="left">
+                  Married for 30 years, Red had never forgotten a single important day with his wife Kitty
                 </Text>
               </Appear>
               <Appear fid="2">
-                <Text textSize="1.5em" bold textColor="tertiary">
-                  Jenna started noticing Joe couldn't remember their favorite vacation spots
+                <Text textSize="1.2em" bold textColor="tertiary"  textAlign="left">
+                  Kitty started noticing Red couldn't remember their favorite vacation spots
                 </Text>
               </Appear>
               <Appear fid="3">
-                <Text textSize="1.5em" bold textColor="secondary">
+                <Text textSize="1.2em" bold textColor="secondary" textAlign="left">
                   Which sports team to cheer?
                 </Text>
               </Appear>
               <Appear fid="4">
-                <Text textSize="1.5em" bold textColor="tertiary">
+                <Text textSize="1.2em" bold textColor="tertiary" textAlign="left">
                   Now her birthday...
                 </Text>
               </Appear>              
+              <iframe src="https://giphy.com/embed/En1h3aR13nlte" width="320" height="220" frameBorder="0" class="giphy-embed" align="right"></iframe>
             </Slide>
             <Slide transition={["slide"]} bgColor="black">
               <BlockQuote>
@@ -160,11 +164,7 @@ return (
               <Layout>
               <Markdown>
                 {`
-<<<<<<< HEAD
-* Teams involved
-=======
 * Teams involved                  
->>>>>>> bb96318a669688b65f6c5b1ef63923674ff59941
   * Analytics
   * R&amp;D
   * Marketing
@@ -174,11 +174,7 @@ return (
                 `}
               </Markdown>             
                 <Fill>
-<<<<<<< HEAD
                   <Image src={"https://raw.githubusercontent.com/ginnyqg/spectacle-presentation/master/my-presentation/images/brain.png"} height="300px" margin="50px auto auto 350px"/>
-=======
-                  <Image src={"https://raw.githubusercontent.com/ginnyqg/spectacle-presentation/master/my-presentation/images/brain.png"} height="300px" margin="50px 320px"/>
->>>>>>> bb96318a669688b65f6c5b1ef63923674ff59941
                 </Fill>
               </Layout>
             </Slide>
@@ -191,78 +187,54 @@ return (
                 AI and technology
               </Heading>
             </Slide>
-            <SlideSet>
-              <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-                <List>
-                  <Appear>
-                    <ListItem>Length of initiative: 9 - 12 months</ListItem>
-                  </Appear>
-                </List>
-                <List>
-                  <Appear>
-                    <ListItem>Memory diagnosis</ListItem>
-                  </Appear>
-                </List>
-              </Slide>
-              <Slide transition={["slide"]} bgColor="primary">
-                <Heading size={1} caps fit textColor="tertiary">
-                  Your presentations are interactive
-                </Heading>
-                <Interactive/>
-              </Slide>
-            </SlideSet>
-            <Slide transition={["slide"]} bgColor="primary"
-              notes="Hard to find cities without any pizza"
-            >
-              <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-                Pizza Toppings
-              </Heading>
-              <Layout>
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHeaderItem/>
-                      <TableHeaderItem>2011</TableHeaderItem>
-                      <TableHeaderItem>2013</TableHeaderItem>
-                      <TableHeaderItem>2015</TableHeaderItem>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    <TableRow>
-                      <TableItem>None</TableItem>
-                      <TableItem>61.8%</TableItem>
-                      <TableItem>39.6%</TableItem>
-                      <TableItem>35.0%</TableItem>
-                    </TableRow>
-                    <TableRow>
-                      <TableItem>Pineapple</TableItem>
-                      <TableItem>28.3%</TableItem>
-                      <TableItem>54.5%</TableItem>
-                      <TableItem>61.5%</TableItem>
-                    </TableRow>
-                    <TableRow>
-                      <TableItem>Pepperoni</TableItem>
-                      <TableItem/>
-                      <TableItem>50.2%</TableItem>
-                      <TableItem>77.2%</TableItem>
-                    </TableRow>
-                    <TableRow>
-                      <TableItem>Olives</TableItem>
-                      <TableItem/>
-                      <TableItem>24.9%</TableItem>
-                      <TableItem>55.9%</TableItem>
-                    </TableRow>
-                  </TableBody>
-                </Table>
-              </Layout>
+            <Slide transition={["fade"]} bgImage={"https://raw.githubusercontent.com/ginnyqg/spectacle-presentation/master/my-presentation/images/test_group.png"} bgDarken={0.75} textColor="primary">
+              <Text textAlign="left" textSize="2em" textColor="white" bold>
+                AP Analytics Team
+              </Text>
+              <List>
+                <Appear>
+                  <ListItem textColor="white" bold>Length of initiative: 9 - 12 months</ListItem>
+                </Appear>
+                <Appear>
+                  <ListItem>5 dosage, 3 purity, 6 demographic levels</ListItem>
+                </Appear>
+                <Appear>
+                  <ListItem>1 control group for comparison</ListItem>
+                </Appear>
+                <Appear>
+                  <ListItem textColor="white" bold>Memory diagnosis</ListItem>
+                </Appear>
+                <Appear>
+                  <ListItem>Before, every quarter, after</ListItem>
+                </Appear>
+              </List>
+            </Slide>
+            <Slide id="process" transition={["slide"]} bgImage={"https://raw.githubusercontent.com/ginnyqg/spectacle-presentation/master/my-presentation/images/process.png"}>
+            </Slide>
+            <Slide id="outcome" transition={["zoom", "fade"]} bgImage={"https://raw.githubusercontent.com/ginnyqg/spectacle-presentation/master/my-presentation/images/outcome.png"}>
             </Slide>
             <Slide transition={["spin", "slide"]} bgColor="tertiary">
-              <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
-                Made with love in Seattle by
-              </Heading>
-              <Link href="http://www.formidable.com">
-                <Image width="100%" src={"https://cdn.rawgit.com/FormidableLabs/spectacle/master/example/assets/formidable-logo.svg"}/>
-              </Link>
+              <Text textAlign="left" textSize="2em" textColor="primary" bold>
+                Need your support
+              </Text>
+              <List>
+                <Appear>
+                  <ListItem textSize="1.2em" textColor="black" bold>Estimated cost from AP Analytics: 300K</ListItem>
+                </Appear>
+                <Appear>
+                  <ListItem textSize="1.2em" textColor="black">Staff, equipment, tools, event, meeting</ListItem>
+                </Appear>
+                <Appear>
+                  <ListItem textSize="1.2em" textColor="black" bold>Follow our journey, share our innovations through news, social media, events</ListItem>
+                </Appear>
+                <Appear>
+                  <ListItem textSize="1.2em" textColor="black">WWW.AP.COM/ANALYTICS/X55, Follw us: #APAIX55</ListItem>
+                </Appear>
+                <Appear>
+                  <ListItem textSize="1.2em" textColor="black" bold>Follow Red’s progress of recovery, help more families like Red and Kitty</ListItem>
+                </Appear>
+              </List>
+              <iframe src="https://giphy.com/embed/SKfxAmcCza9fq" width="400" height="180" frameBorder="0" class="giphy-embed" align="right"></iframe>
             </Slide>
           </Deck>
         );

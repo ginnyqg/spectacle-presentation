@@ -28,7 +28,7 @@ require('normalize.css');
 
 const theme = createTheme(
   {
-    primary: 'lightpink',
+    primary: '#e86b97',
     secondary: 'black',
     tertiary: 'white',
     quartenary: '#CECECE',
